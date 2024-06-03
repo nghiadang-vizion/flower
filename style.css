@@ -1838,6 +1838,7 @@ svg .draw.outline_heart {
 .animate_container.appear {
   display: block !important;
 }
+
 .lyrics {
   position: absolute;
   z-index: 9;

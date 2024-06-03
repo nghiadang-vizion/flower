@@ -18,3 +18,15 @@ function myFunction() {
   var svg = document.querySelectorAll(".draw");
   svg.forEach((i) => i.classList.toggle("reverse"));
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const arcText = document.querySelector(".arc-text");
+  const radius = arcText.getAttribute("data-arc");
+  const chars = arcText.querySelectorAll("span");
+  const angle = 360 / chars.length;
+
+  chars.forEach((char, i) => {
+    const rotate = angle * i;
+    char.style.transform = `rotate(${rotate}deg) translate(${radius}px) rotate(-${rotate}deg)`;
+  });
+});
