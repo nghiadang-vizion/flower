@@ -7,7 +7,7 @@ btn.addEventListener("click", myFunction);
 
 function myFunction() {
   const music = document.querySelector(".music");
-  music.play();
+  // music.play();
 
   const animateBackGround = document.querySelector(".animate_container");
   animateBackGround.classList.toggle("appear");
